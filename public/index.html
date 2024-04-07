@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lootbox Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="lootbox-container">
+            <button id="claim-lootbox-btn">Claim Lootbox</button>
+            <button id="open-lootbox-btn" disabled>Open Lootbox</button>
+        </div>
+        <div id="lootbox-result" class="hidden">
+            <p id="unlocked-item"></p>
+        </div>
+        <div id="crate-popup" class="overlay hidden">
+            <div class="popup" onclick="openCrate()">
+                <img id="crate-img" src="closed-lootbox.gif" alt="Closed Crate">
+            </div>
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
